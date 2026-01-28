@@ -1,0 +1,36 @@
+
+### GET STUDENTS
+GET http://localhost:3000/students
+
+### CREATE STUDENT
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "first_name": "Danielle Grace",
+  "last_name": "Veloso",
+  "email": "dgveloso14876@liceo.edu.ph",
+  "age": 20,
+  "course": "BSIT",
+  "gpa": 2,
+  "year_level": 3,
+  "enrollment_status": "Active"
+}
+
+### UPDATE STUDENT
+PUT http://localhost:3000/students/1
+Content-Type: application/json
+
+{
+  "first_name": "Enesto Grace",
+  "last_name": "Veloso",
+  "email": "dgveloso76@liceo.edu.ph",
+  "age": 28,
+  "course": "BSIT",
+  "gpa": 2,
+  "year_level": 2,
+  "enrollment_status": "Active"
+}
+
+### DELETE STUDENT
+DELETE http://localhost:3000/students/3
